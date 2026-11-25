@@ -1,8 +1,0 @@
-bibentry(
-  bibtype = "Manual",
-  title = "iwbsurv: Information-Weighted Blending for Survival Extrapolation",
-  author = c(person("Hao", "Chen"), person("Clara", "Grazian")),
-  year = "2026",
-  note = "R package version 0.1.0",
-  url = "https://github.com/haohaostats/iwbsurv"
-)

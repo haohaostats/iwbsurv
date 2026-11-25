@@ -11,7 +11,7 @@ Description: Survival extrapolation combining a Royston-Parmar observation
     common scaling factor enforces non-negative evaluated hazards across
     retained draws. Includes pointwise uncertainty intervals, a Beta blending
     comparator, borrowing summaries, and plotting methods.
-License: MIT + file LICENSE
+License: All rights reserved
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports: flexsurv, survival, scam, mgcv, stats, graphics, grDevices, utils
