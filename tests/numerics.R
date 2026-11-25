@@ -61,11 +61,16 @@ near(utils::tail(predict(fit2)$time, 1), 15)
 
 fixture <- read.csv("reference-rotterdam.csv")
 actual <- predict(fit, times = fixture$time)
-near(actual$mean, fixture$mean)
-near(actual$lower, fixture$lower)
-near(actual$upper, fixture$upper)
-near(predict(fit, times = fixture$time, type = "weight")$pi, fixture$pi)
-near(fit$kappa, fixture$kappa[1])
+reference_error <- c(
+  mean = max(abs(actual$mean - fixture$mean)),
+  lower = max(abs(actual$lower - fixture$lower)),
+  upper = max(abs(actual$upper - fixture$upper)),
+  weight = max(abs(predict(fit, times = fixture$time, type = "weight")$pi -
+                   fixture$pi)),
+  kappa = abs(fit$kappa - fixture$kappa[1])
+)
+print(reference_error)
+stopifnot(all(reference_error < 1e-6))
 
 fails(iwb_fit(time, status + 1, 5, 15, Sa_mean = 0.39))
 fails(iwb_fit(time, status, 5, 15, Sa_mean = 1))
