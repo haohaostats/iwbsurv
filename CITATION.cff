@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this software when using iwbsurv."
+type: software
+title: "iwbsurv: Information-Weighted Blending for Survival Extrapolation"
+authors:
+  - family-names: Chen
+    given-names: Hao
+  - family-names: Grazian
+    given-names: Clara
+version: 0.1.0
+date-released: 2026-11-25
+license: MIT
+repository-code: "https://github.com/haohaostats/iwbsurv"

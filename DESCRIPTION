@@ -1,0 +1,19 @@
+Package: iwbsurv
+Type: Package
+Title: Information-Weighted Blending for Survival Extrapolation
+Version: 0.1.0
+Authors@R: c(
+    person("Hao", "Chen", email = "hche2036@uni.sydney.edu.au", role = c("aut", "cre")),
+    person("Clara", "Grazian", role = "aut"))
+Description: Survival extrapolation combining a Royston-Parmar observation
+    model with an uncertain, conditionally anchored Gompertz tail. Relative
+    log-increment dispersion determines a monotone blending weight, and a
+    common scaling factor enforces non-negative evaluated hazards across
+    retained draws. Includes pointwise uncertainty intervals, a Beta blending
+    comparator, borrowing summaries, and plotting methods.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: flexsurv, survival, scam, mgcv, stats, graphics, grDevices, utils
+URL: https://github.com/haohaostats/iwbsurv
+BugReports: https://github.com/haohaostats/iwbsurv/issues
