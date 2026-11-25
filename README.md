@@ -63,13 +63,3 @@ pdf("rotterdam-survival.pdf", width = 7.5, height = 5.5)
 plot(fit, xlab = "Time (years)")
 dev.off()
 ```
-
-## Citation
-
-Hao Chen and Clara Grazian. *Information-Weighted Blending for Survival Extrapolation with Uncertain Long-Term Anchors.*
-
-```r
-citation("iwbsurv")
-```
-
-MIT License · Hao Chen and Clara Grazian.
